@@ -29,7 +29,7 @@ export default {
 	.container {
 		display: flex;
 		width: 90%;
-		margin: 0 auto;
+		margin:0 auto;
 		
 	}
 	.side-bar {
@@ -52,7 +52,7 @@ export default {
 		flex: 1 1 78%;
 		text-align: left;
 		background-color: #fff;
-		margin-left: 20px;
+		margin-left: 150px;
 		padding-bottom: 20px;
 	}
 </style>
