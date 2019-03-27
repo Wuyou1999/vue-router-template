@@ -9,29 +9,32 @@
 				<router-link to="/lib_tk">题库</router-link>
 				<router-link to="/lib_zyk">资源库</router-link>
 				<router-link to="/lib_hdk">活动库</router-link>
-			</div>
+				<router-view/>
+           </div>
+			
 		</div>
 	</div>
 </template>
 
 <script>
-export default {
-	name: 'Lib',
-	data() {
-		return {
-			
-		};
-	}
-};
+	export default {
+		name: 'Lib',
+		data() {
+			return {
+
+			};
+		}
+	};
 </script>
 
 <style>
 	.container {
 		display: flex;
 		width: 90%;
-		margin:0 auto;
-		
+		margin: 0 auto;
+
 	}
+
 	.side-bar {
 		flex: 1 1 20%;
 		display: flex;
@@ -39,16 +42,19 @@ export default {
 		background-color: #fff;
 		margin-top: 20px;
 	}
-	a{
+
+	a {
 		margin-bottom: 30px;
 	}
-	.kong{
+
+	.kong {
 		flex: 1 1 2%;
 		display: flex;
 		flex-direction: column;
 		background-color: #AAAAAA;
 	}
-	.content{
+
+	.content {
 		flex: 1 1 78%;
 		text-align: left;
 		background-color: #fff;

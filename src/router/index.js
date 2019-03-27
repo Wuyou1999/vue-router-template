@@ -39,7 +39,30 @@ export default new Router({
 					component: resolve => require(['../components/Lib.vue'], resolve),
 					meta: {
 						title: '库管理'
-					}
+					},
+					children: [
+						{
+							path: '/lib_tk',
+							component: resolve => require(['../components/lib_tk.vue'], resolve),
+							meta: {
+								title: '题库'
+							}
+						},
+						{
+							path: '/lib_hdk',
+							component: resolve => require(['../components/lib_hdk.vue'], resolve),
+							meta: {
+								title: '活动库'
+							}
+						},
+						{
+							path: '/lib_zyk',
+							component: resolve => require(['../components/lib_zyk.vue'], resolve),
+							meta: {
+								title: '资源库'
+							}
+						}
+					]
 				},
 				{
 					//班课详情组件

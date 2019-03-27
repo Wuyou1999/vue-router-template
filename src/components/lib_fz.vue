@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2>库分组</h2>
+		
 	</div>
 </template>
 
